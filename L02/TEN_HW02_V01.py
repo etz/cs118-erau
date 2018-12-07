@@ -1,0 +1,17 @@
+import math
+print("How many quarters do you have?")
+q = int(input())
+print("How many nickles do you have?")
+n = int(input())
+print("How many pennies do you have?")
+p = int(input())
+tt = q*0.25+n*0.05+p*0.01
+print("The amount of money you have is $", tt)
+print("To calculate compound interest, you'll need a little more information... \n What is the annual nominal interest rate? use percentages, so 7% is just 7")
+ir = int(input())
+print("What is the number of times the interest is compounded per year? Annual - 1, Biannual - 2, e.t.c.")
+cpr = int(input())
+print("How many years will this investment last?")
+t = int(input())
+a = ((ir*.01)/cpr)**(cpr*t)
+print("Your compounded interest at the end of the term is: ", a*tt+tt)
